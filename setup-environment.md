@@ -11,7 +11,7 @@
 
 ## NPM
 
-## Git
+## Git & Github
 Generate or locate existing SSH keys to be used for authentication
 - [Check for existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 - [Generate new SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
@@ -30,6 +30,11 @@ Host github.com
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
+```
+
+Need to setup GitHub CLI auth as well
+```
+gh auth login
 ```
 
 ## Zsh

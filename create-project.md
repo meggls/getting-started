@@ -23,5 +23,6 @@ git init
 git add .
 git commit -am 'init commit'
 git remote add origin git@github.com:$USER/$PROJECT.git
+gh repo create $PROJECT --public --source=. --remote=upstream
 git push -u origin master
 ```
