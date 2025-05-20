@@ -1,21 +1,27 @@
-# Create New Project
+# Create a Project
 
-    PROJECT_DIR=getting-started
+## Contents
+
+
+## Create a New Project Directory
+
+    PROJECT=getting-started
 
     cd ~/Documents/git
 
-    mkdir $PROJECT_DIR
-    cd $PROJECT_DIR
+    mkdir $PROJECT
+    cd $PROJECT
 
-# Add Project to Git
+## Add Project to Git
 
 Initialize a git repo locally
+```
+USER=meggls
+PROJECT=getting-started
 
-    PROJECT_DIR=getting-started
-
-    git init
-    git add .
-    git commit -am 'init commit'
-    git remote add origin git@github.com:meggls/$PROJECT_DIR.git
-    git push -u origin master
-
+git init
+git add .
+git commit -am 'init commit'
+git remote add origin git@github.com:$USER/$PROJECT.git
+git push -u origin master
+```
